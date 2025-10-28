@@ -1,0 +1,34 @@
+# Node.js (applies to both BE and FE)
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+/backend/build
+/backend/dist
+/frontend/build
+/frontend/dist
+/frontend/.vite
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
