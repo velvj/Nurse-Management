@@ -10,13 +10,13 @@ class NurseService {
     }
     async update(id, nurseData) {
         await this.NurseModel.update(nurseData, { where: { id } })
-        return await this.NurseModel.findByPK(id)
+        return await this.NurseModel.findByPk(id)
     }
     async delete(id) {
         return await this.NurseModel.destroy({ where: { id } })
     }
     async getById(id) {
-        return await this.NurseModel.findByPK(id)
+        return await this.NurseModel.findByPk(id)
     }
 }
 

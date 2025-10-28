@@ -11,7 +11,7 @@ export const nurseRoutes = (controller) => {
   router.get('/getNurse', controller.getAll);
   router.get('/nurse/:id', controller.getById);
   router.post('/create', validateNurse(), controller.create);
-  router.put('/update',validateUpdateNurse(), controller.update);
+  router.put('/update/:id',validateUpdateNurse(), controller.update);
   router.delete('/nurseDelete/:id', controller.delete);
 
   return router;
