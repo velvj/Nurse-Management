@@ -143,7 +143,7 @@ export default function NurseList() {
       </div>
 
       {/* Search Bar */}
-      {/* <div className="mb-4">
+      <div className="mb-4">
         <div className="flex gap-2 items-center">
           <div className="relative w-80">
             <input
@@ -176,7 +176,7 @@ export default function NurseList() {
             </span>
           )}
         </div>
-      </div> */}
+      </div>
 
       {/* Filters */}
       {showFilters && (
