@@ -2,8 +2,8 @@ import axios from 'axios';
 
 const BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/nurses';
 
-export const getNurses = async (sortBy,order)=>{
-    const res = await axios.get(`${BASE}/getNurse`,{params:{sortBy,order}})
+export const getNurses = async (sortBy,order,search="",filters={})=>{
+    const res = await axios.get(`${BASE}/getNurse`,{params:{sortBy,order,search,...filters}})
     return res.data;
 }
 
